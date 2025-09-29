@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Udemy Courses</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Free Udemy Courses</h1>
+      <button id="refresh-btn">Refresh Courses</button>
+    </header>
+
+    <main>
+      <div id="loading" class="hidden">Loading courses...</div>
+      <div id="error" class="hidden"></div>
+      <div id="courses-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- <script>
+      var courseData = {
+        courses: [
+          {
+            name: "100% OFF- Ultimate Python Game Development 2025 : From Zero To Gamer",
+            category: "IT & Software",
+            image:
+              "https://img-c.udemycdn.com/course/480x270/6147203_b67f_3.jpg",
+            actual_price_usd: 19.99,
+            sale_price_usd: 0,
+            sale_end: "2025-09-09T09:30:00",
+            description:
+              "Ultimate Python Game Development 2025 : From Zero To Gamer , Learn Python Game Development Step-by-Step | Real Python Game Development Projects | Complete ...",
+            url: "https://www.udemy.com/course/complete-python-game-development-course-from-zero-to-hero/?couponCode=30EF2551C391ECDB3E56",
+            clean_url:
+              "https://www.udemy.com/course/complete-python-game-development-course-from-zero-to-hero/",
+          },
+          {
+            name: "100% OFF- Master in Data Science and Data Analytics",
+            category: "Data Science",
+            image:
+              "https://img-c.udemycdn.com/course/480x270/5724310_36ec_2.jpg",
+            actual_price_usd: 399000,
+            sale_price_usd: 0,
+            sale_end: "2025-09-12T20:40:00",
+            description:
+              "Master in Data Science and Data Analytics , Machine Learning model development using Python, R and statistics. For Data Scientists/Analysts, Artificial ...",
+            url: "https://www.udemy.com/course/a-complete-roadmap-to-become-a-successful-data-scientist/?couponCode=9DF0E1638F6A8F02412F",
+            clean_url:
+              "https://www.udemy.com/course/a-complete-roadmap-to-become-a-successful-data-scientist/",
+          },
+        ],
+        total: 2,
+      };
+
+      function createCard(course) {
+        var cardHTML = `
+        <article class="card" aria-labelledby="course-title">
+          <div class="media" role="img" aria-label="Course image">
+            <span class="badge" id="sale-badge">${
+              course.sale_price_usd === 0 ? "SALE" : ""
+            }</span>
+            <img id="course-image" src="${course.image}" alt="${
+          course.name
+        } course image"/>
+          </div>
+
+          <div class="body">
+            <div class="meta">
+              <div class="category" id="course-category">${
+                course.category
+              }</div>
+            </div>
+
+            <h3 class="title" id="course-title">${course.name}</h3>
+            <p class="desc" id="course-desc">${course.description}</p>
+
+            <div class="meta">
+              <div class="meta-item">Category: <strong id="meta-category">${
+                course.category
+              }</strong></div>
+            </div>
+
+            <div class="price">
+              <div class="price-left">
+                <div>
+                  <div class="price-text" id="price-text">${
+                    course.sale_price_usd === 0
+                      ? "FREE"
+                      : `$${course.sale_price_usd}`
+                  }</div>
+                  <div class="old-price" id="old-price">${
+                    course.sale_price_usd === 0
+                      ? `$${course.actual_price_usd}`
+                      : ""
+                  }</div>
+                </div>
+              </div>
+
+              <div class="actions">
+                <a id="enroll-link" class="btn btn-primary" href="${
+                  course.url
+                }" target="_blank" rel="noopener">Enroll now</a>
+                <a id="preview-link" class="btn btn-outline" href="${
+                  course.clean_url
+                }" target="_blank" rel="noopener" >Course page</a>
+              </div>
+            </div>
+          </div>
+        </article>
+    `;
+        return cardHTML;
+      }
+
+      function displayCourses(courses) {
+        // TODO: Generate and insert cards into DOM
+
+        var container = document.getElementById("courses-container");
+
+        container.innerHTML = "";
+
+        courses.forEach(function (course) {
+          var cardHTML = createCard(course);
+          container.innerHTML += cardHTML; // Append each card
+        });
+      }
+
+      displayCourses(courseData.courses);
+    </script> -->
+  </body>
+</html>
